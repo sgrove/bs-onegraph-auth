@@ -7,6 +7,7 @@
     "clean": "bsb -clean-world",
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w",
+    "bs-build": "bsb -clean-world -make-world",
     "test": "jest"
   },
   "devDependencies": {
@@ -23,5 +24,9 @@
     "onegraph-auth": "^2.0.6"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sgrove/bs-onegraph-auth"
+  }
 }
