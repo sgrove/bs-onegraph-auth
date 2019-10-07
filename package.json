@@ -15,8 +15,8 @@
     "@glennsl/bs-jest": "0.4.9"
   },
   "files": [
-    "src/Index.re",
-    "src/Index.bs.js",
+    "src/OneGraphAuth.re",
+    "src/OneGraphAuth.bs.js",
     "bsconfig.json"
   ],
   "peerDependencies": {
