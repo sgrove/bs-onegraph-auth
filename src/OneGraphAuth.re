@@ -63,7 +63,10 @@ external serviceStatus: (t, unit) => Js.Promise.t(array(servicesStatus)) =
 [@bs.send] external accessToken: t => Js.Nullable.t(token) = "accessToken";
 
 [@bs.send]
-external findMissingAuthServices: (t, option('a)) => array(string) = "";
+external _findMissingAuthServices: (t, option('a)) => array(string) = "";
+
+let findMissingAuthServices = (auth: t, resultIsh: option('a)): list(string) =>
+  Array.to_list(_findMissingAuthServices(auth, resultIsh));
 
 let logout = (auth, service, ~foreignUserId=?, ()) =>
   logout_(auth, service, Js.Nullable.fromOption(foreignUserId));
