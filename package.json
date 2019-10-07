@@ -1,0 +1,27 @@
+{
+  "name": "bs-onegraph-auth",
+  "version": "0.0.1",
+  "description": "Bucklescript bindings for the OneGraph auth library",
+  "main": "index.js",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "bs-platform": "^5.0.6",
+    "jest": "22.1.2",
+    "@glennsl/bs-jest": "0.4.9"
+  },
+  "files": [
+    "src/Index.re",
+    "src/Index.bs.js",
+    "bsconfig.json"
+  ],
+  "peerDependencies": {
+    "onegraph-auth": "^2.0.6"
+  },
+  "author": "",
+  "license": "ISC"
+}
